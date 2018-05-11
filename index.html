@@ -230,6 +230,532 @@
             
               
                 
+                <a class="post-title-link" href="/2018/05/11/koujue/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2018-05-11T12:59:49+08:00" content="2018-05-11">
+              2018-05-11
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: ‘[9X9口诀表]’<br>date: 2018-04-15 12:59:49<br>tags:—<br>    用Java来输出一个9X9乘法口诀表<br>    public class Testjiucheng {<br>    public static void main(String[]sgrs){<br>        for(int a = 1; a&lt;=9; a++){<br>            for(int b = 1; b&lt;=a; b++){<br>                int sum=0;<br>                sum = a<em>b;<br>                System.out.print(b+”</em>“+a+”=”+sum+”\t”);<br>            }<br>            System.out.println(“ “);<br>        }<br>    }<br>}<br> 其实还是挺简单的，我以前怎么就写不出来呢</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/05/11/maopao/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2018-05-11T12:52:21+08:00" content="2018-05-11">
+              2018-05-11
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: ‘[maopao]’<br>date: 2018-05-11 12:52:21<br>tags:—<br>    //冒泡排序：Java</p>
+<p>public class BubbleSort {</p>
+<p>   /*</p>
+<pre><code>* 冒泡排序
+*
+* 参数说明：
+*     a -- 待排序的数组
+*     n -- 数组的长度
+*/
+</code></pre><p>   public static void bubbleSort1(int[] a, int n) {<br>       int i,j;</p>
+<pre><code>for (i=n-1; i&gt;0; i--) {
+    // 将a[0...i]中最大的数据放在末尾
+    for (j=0; j&lt;i; j++) {
+
+        if (a[j] &gt; a[j+1]) {
+            // 交换a[j]和a[j+1]
+            int tmp = a[j];
+            a[j] = a[j+1];
+            a[j+1] = tmp;
+        }
+    }
+}
+</code></pre><p>   }</p>
+<p>   /*</p>
+<pre><code>* 冒泡排序(改进版)
+*
+* 参数说明：
+*     a -- 待排序的数组
+*     n -- 数组的长度
+*/
+</code></pre><p>   public static void bubbleSort2(int[] a, int n) {<br>       int i,j;<br>       int flag;                 // 标记</p>
+<pre><code>for (i=n-1; i&gt;0; i--) {
+
+    flag = 0;            // 初始化标记为0
+    // 将a[0...i]中最大的数据放在末尾
+    for (j=0; j&lt;i; j++) {
+        if (a[j] &gt; a[j+1]) {
+            // 交换a[j]和a[j+1]
+            int tmp = a[j];
+            a[j] = a[j+1];
+            a[j+1] = tmp;
+
+            flag = 1;    // 若发生交换，则设标记为1
+        }
+    }
+
+    if (flag==0)
+        break;            // 若没发生交换，则说明数列已有序。
+}
+</code></pre><p>   }</p>
+<p>   public static void main(String[] args) {<br>       int i;<br>       int[] a = {20,40,30,10,60,50};</p>
+<pre><code>System.out.printf(&quot;before sort:&quot;);
+for (i=0; i&lt;a.length; i++)
+    System.out.printf(&quot;%d &quot;, a[i]);
+System.out.printf(&quot;\n&quot;);
+
+bubbleSort1(a, a.length);
+//bubbleSort2(a, a.length);
+
+System.out.printf(&quot;after  sort:&quot;);
+for (i=0; i&lt;a.length; i++)
+    System.out.printf(&quot;%d &quot;, a[i]);
+System.out.printf(&quot;\n&quot;);
+</code></pre><p>   }<br>}</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/05/11/kuai/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2018-05-11T12:49:22+08:00" content="2018-05-11">
+              2018-05-11
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: ‘[QuickSort]’<br>date: 2018-04-13 12:49:22<br>tags:—<br>    // 快速排序：Java实现</p>
+<p>public class QuickSort {</p>
+<p>   /*</p>
+<pre><code>* 快速排序
+*
+* 参数说明：
+*     a -- 待排序的数组
+*     l -- 数组的左边界(例如，从起始位置开始排序，则l=0)
+*     r -- 数组的右边界(例如，排序截至到数组末尾，则r=a.length-1)
+*/
+</code></pre><p>   public static void quickSort(int[] a, int l, int r) {</p>
+<pre><code>if (l &lt; r) {
+    int i,j,x;
+
+    i = l;
+    j = r;
+    x = a[i];
+    while (i &lt; j) {
+        while(i &lt; j &amp;&amp; a[j] &gt; x)
+            j--; // 从右向左找第一个小于x的数
+        if(i &lt; j)
+            a[i++] = a[j];
+        while(i &lt; j &amp;&amp; a[i] &lt; x)
+            i++; // 从左向右找第一个大于x的数
+        if(i &lt; j)
+            a[j--] = a[i];
+    }
+    a[i] = x;
+    quickSort(a, l, i-1); /* 递归调用 */
+    quickSort(a, i+1, r); /* 递归调用 */
+}
+</code></pre><p>   }</p>
+<p>   public static void main(String[] args) {<br>       int i;<br>       int a[] = {30,40,60,10,20,50};</p>
+<pre><code>System.out.printf(&quot;before sort:&quot;);
+for (i=0; i&lt;a.length; i++)
+    System.out.printf(&quot;%d &quot;, a[i]);
+System.out.printf(&quot;\n&quot;);
+
+quickSort(a, 0, a.length-1);
+
+System.out.printf(&quot;after  sort:&quot;);
+for (i=0; i&lt;a.length; i++)
+    System.out.printf(&quot;%d &quot;, a[i]);
+System.out.printf(&quot;\n&quot;);
+</code></pre><p>   }<br>}</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/05/11/算法/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2018-05-11T12:46:25+08:00" content="2018-05-11">
+              2018-05-11
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: ‘[InsertSort]’<br>date: 2018-04-11 12:46:25<br>tags: —<br>    // 直接插入排序 java实现<br>    public class InsertSort {</p>
+<p>   /*</p>
+<pre><code>* 直接插入排序
+*
+* 参数说明：
+*     a -- 待排序的数组
+*     n -- 数组的长度
+*/
+</code></pre><p>   public static void insertSort(int[] a, int n) {<br>       int i, j, k;</p>
+<pre><code>for (i = 1; i &lt; n; i++) {
+
+    //为a[i]在前面的a[0...i-1]有序区间中找一个合适的位置
+    for (j = i - 1; j &gt;= 0; j--)
+        if (a[j] &lt; a[i])
+            break;
+
+    //如找到了一个合适的位置
+    if (j != i - 1) {
+        //将比a[i]大的数据向后移
+        int temp = a[i];
+        for (k = i - 1; k &gt; j; k--)
+            a[k + 1] = a[k];
+        //将a[i]放到正确位置上
+        a[k + 1] = temp;
+    }
+}
+</code></pre><p>   }</p>
+<p>   public static void main(String[] args) {<br>       int i;<br>       int[] a = {20,40,30,10,60,50};</p>
+<pre><code>System.out.printf(&quot;before sort:&quot;);
+for (i=0; i&lt;a.length; i++)
+    System.out.printf(&quot;%d &quot;, a[i]);
+System.out.printf(&quot;\n&quot;);
+
+insertSort(a, a.length);
+
+System.out.printf(&quot;after  sort:&quot;);
+for (i=0; i&lt;a.length; i++)
+    System.out.printf(&quot;%d &quot;, a[i]);
+System.out.printf(&quot;\n&quot;);
+</code></pre><p>   }<br>}</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/06/03/省市联动代码/" itemprop="url">
                   sa
                 </a>
@@ -1200,111 +1726,13 @@ protected void createContents() {
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/14/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2017-03-14T17:06:07+08:00" content="2017-03-14">
-              2017-03-14
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1342,7 +1770,7 @@ protected void createContents() {
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
